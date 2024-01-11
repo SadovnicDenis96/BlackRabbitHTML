@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" href="images/icon.png">
+    <title>Black rabbit</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/icon.png">
+        <navbar>
+            <a href="index.html">Домой</a>
+            <a href="index.html#contact-info">Информация о компании</a>
+            <a href="index.html#product">Продукция</a>
+            <a href="pages/contacte.html">Контакты</a>
+        </navbar>
+        <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+    </header>
+    <main>
+        <section>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="images/image1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image3.jpg" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/image4.jpg" alt="Image 4">
+                    </div>
+                </div>
+                <button class="prev" onclick="prevSlide()">❮</button>
+                <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+            <h2>Кофе, что может быть лучше?</h2>
+            <p><b>Кофе</b> - один из популярных и древних напитков на земном шаре. Миллионы людей начинают свой день с
+                чашечки
+                кофе. С молоком, с сахаром, с холодной водой, с лимоном и даже с солью... Его необыкновенный вкус и
+                аромат порождает настоящую кофеманию. Кофе - это больше, чем напиток. Кофе - это искусство наслаждения.
+            </p>
+            <p>Благодаря содержанию кофеина напиток обладает бодрящим эффектом, который хорошо знаком любителям
+                утреннего кофе. Почему это происходит? Кофеин улучшает кровоснабжение мозга и даже активизирует
+                кратковременную память, что помогает принимать оперативные решения, повышает работоспособность и
+                способно снять усталость. Благодаря своему тонизирующему действию напиток помогает справиться со
+                стрессом, побороть апатию, вялость и сонливость. <br> Регулярное употребление кофе способно защитить
+                человека от таких болезней, как: рак печени, болезни Альцгеймера, сахарный диабет второго типа,
+                алкогольный цироз печени. А если пить кофе без сахара, то можно избежать кариеса. Помимо этого кофе
+                благоприятно влияет на имунитет и пищеварительную систему.</p>
+            <h3>Польза кофе</h3>
+            <ul>
+                <li>Снижение риска возникновения рака. Учеными из американского Национального института изучения рака
+                    было выяснено, что четыре и более чашки кофе в день снижают риск возникновения меланомы,
+                    разновидности рака кожи, на 20%.</li>
+                <li>Помощь в похудении. Доказано, что у поклонников кофе (с кофеином) обмен веществ происходит на 16%
+                    быстрее, чем у тех, кто отказывает себе в этом напитке или предпочитает тот, что без кофеина. При
+                    таком раскладе процесс похудения будет протекать значительно быстрее</li>
+                <li>Антиоксиданты. В кофе их даже больше, чем в клюкве и яблоках, лидерах по количеству антиоксидантов.
+                    Сегодня уже известно, что антиоксиданты снижают риск развития хронических заболеваний. Также кофе
+                    уменьшает возможность появления таких заболеваний, как болезнь Паркинсона и диабета второго типа.
+                </li>
+                <li>Лечение депрессии. Согласно исследованиям 2011 года Archives of Internal Medicine, женщины,
+                    ежедневно выпивающие 2-3 чашки кофе, менее склоны (15%) к развитию депрессии.</li>
+                <li>Крепкая память. Исследования также показали, что две чашки кофе в день улучшают кратковременную и
+                    долговременную память, а также увеличивают скорость реакции. Кофе также знаменит тем, что снижает
+                    риск развития болезни Альцгеймера. Происходит это благодаря тому, что кофеин способен уменьшать
+                    размер бляшек, образующихся на нервных клетках и нарушающих работу мозга.</li>
+            </ul>
+            <h2 id="product">Наши напитки из кофе</h2>
+            <div class="gallery-container">
+                <div class="photo-gallery">
+                    <div class="photo">
+                        <a href="pages/napitci.html#1"><img src="images/photo1.jpg" alt="Капучино">
+                            <p class="new-text">Капучино</p>
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/napitci.html#2"><img src="images/photo2.jpg" alt="Латте">
+                            <p class="new-text">Латте</p>
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/napitci.html#3"><img src="images/photo3.jpg" alt="Эспрессо">
+                            <p class="new-text">Эспрессо</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="photo-gallery">
+                    <div class="photo">
+                        <a href="pages/napitci.html#4"><img src="images/photo4.jpg" alt="Моккочино">
+                            <p class="new-text">Моккочино</p>
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/napitci.html#5"><img src="images/photo5.jpg" alt="Флэт уайт">
+                            <p class="new-text">Флэт уайт</p>
+                        </a>
+                    </div>
+                    <div class="photo">
+                        <a href="pages/napitci.html#6"><img src="images/photo6.jpg" alt="Фраппе">
+                            <p class="new-text">Фраппе</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2>Как нас найти?</h2>
+            <div class="row" id="contact-info">
+                <div class="col-50">
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> Телефон: +1 234 567 890</p>
+                        <p><i class="fas fa-envelope"></i> Email: info@example.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Адрес: Город, Улица, Дом</p>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <iframe class="contact-info"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.5806496513915!2d28.299743392047585!3d47.89456325999856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cc85a3567fd3a5%3A0x106a4dcc5392a8f3!2sBlack%20Rabbit%20Caffe!5e0!3m2!1sru!2s!4v1699121110670!5m2!1sru!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>2023</span>
+    </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

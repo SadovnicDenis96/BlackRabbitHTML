@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    background: #404040;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+    z-index: 1;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+navbar a:hover {
+    color: #b8b6ba;
+    text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background: #404040;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+
+p {
+    line-height: 150%; /* растояние между строчками */
+    text-indent: 30px; /* Отступ по принципу красной строки */
+}
+
+li {
+    margin-top: 10px; /* отступ с верху */
+    padding-left: 15px; /* отступ слева  */
+    list-style-image: linear-gradient(#fa9483, #fa9483) ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 270%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 200%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 200%;
+}
+
+section {
+    padding: 90px 15%;
+}
+
+.logo {
+    height: 50px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.row {
+    overflow: auto;
+}
+
+.col-50 {
+    width: 50%;
+    float: left;
+    padding: 0px 10px;
+}
+
+.contacte, .cform {
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    background-color: #f3deca27;
+    padding: 5px 5%;
+    height: 325px;
+}
+
+.cform input, .cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Параметры для слайдера главной страницы */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+  
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slide {
+    flex: 0 0 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 65vh;
+}
+  
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+  
+.prev {
+    left: 10px;
+}
+  
+.next {
+    right: 10px;
+}
+
+/* Параметры для фото главной страницы */
+
+.gallery-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+  
+  .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.photo {
+    width: 30%; /* Ширина блока с изображением */
+    margin-bottom: 20px;
+    overflow: hidden; /* Обрезать тень за пределами блока */
+}
+
+.photo p {
+    text-align: center;
+    line-height: 0%; /* растояние между строчками */
+    text-indent: 0px; /* Отступ по принципу красной строки */
+}
+
+.photo a {
+    color: rgb(241, 137, 11);
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+  
+.photo img {
+    max-width: 100%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.3s ease-in-out; /* Анимация при наведении */
+}
+
+.photo:hover img {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.bautura {
+    overflow: auto; /* т.к. используем плавающие элементы, которые могут выйти за пределы блока, это поможет правильно подстроить элементы */
+    border-bottom: 2px rgb(241, 137, 11) dashed;
+}
+
+.bautura h2 {
+    text-align: left;
+}
+
+.bautura img {
+    height: 18vh; /* высота изображения 18% видимого экрана*/
+    width: 18vh; /* ширина изобращения 18% видимого экрана*/
+    border-radius: 50%; /* закругляем изображение с 4-х углов */
+    float: left; /* выравнивание фото по левой стороне */
+    margin-right: 15px; /* отступ справа 15px, чтоб текст не прилипал к фото */
+    margin-bottom: 15px; /* отступ снизу 15px, чтоб текст не прилипал к фото */
+}
+
+/* Параметры для контактов главной страницы */
+
+.contact-info {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    height: 325px;
+    width: 99%;
+}
+  
+.contact-info p {
+    margin: 10px 0;
+}
+
+@media (max-width: 850px) {
+    body {
+        font-size: 16px;
+    }
+
+    section{
+        padding: 90px 10px;
+    }
+
+    .col-50 {
+        width: 100%;
+        float: left;
+        padding: 0px 10px;
+    }
+
+    navbar a {
+        display: none;
+    }
+    
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar {
+        display: block;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    .new-text {
+        font-size: 16px; /* Новый размер шрифта для абзацев на мобильных устройствах */
+    }
+}
